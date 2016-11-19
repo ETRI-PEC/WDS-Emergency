@@ -1,0 +1,104 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/******************************************************************
+ * Presentation styles according to severity level
+ ******************************************************************/
+
+/*
+ * Level 1
+ */
+#wds-emer-prof-lv1 {
+    /*display:table-cell;*/
+    margin-left:0;
+    z-index: 9999;
+    vertical-align: middle;
+    width: 100vw;
+    height: 10vh;
+    line-height:10vh;
+    color : white;
+    font-size: 8vh;
+    font-weight: bold;
+    background-color: blue;
+    position: fixed;
+    bottom: 0vh;
+/*    animation: marquee 50s linear infinite;*/
+}
+
+/*
+ * Level 3
+ */
+#wds-emer-prof-lv3 {
+    margin-left:0;
+    z-index: 9999;
+    vertical-align: middle;
+    width: 50vw;
+    height: 50vh;
+    /*line-height:50vh;*/
+    color : white;
+    font-size: 5vh;
+    font-weight: bold;
+    background-color: blue;
+    position: fixed;
+    top: 20vh;
+    left: 25vw;
+    border:5px solid red;
+    border-color: red;
+    overflow: visible;
+}
+
+/*
+ * Level 4
+ */
+#wds-emer-prof-lv4 {
+    margin-left:0;
+    z-index: 9999;
+    vertical-align: middle;
+    width: 100vw;
+    height: 100vh;
+    color : white;
+    font-size: 7vh;
+    font-weight: bold;
+    background-color: blue;
+    position: fixed;
+    top: 0vh;
+    left: 0vw;
+    overflow: visible;
+}
+
+
+/******************************************************************
+ * Presentation Effects
+ ******************************************************************/
+/* 
+ * BLINK
+ */
+.blink {
+    overflow: yes;
+    animation: blinker 2s ease infinite;
+}
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+
+
+/*
+ * SCROLL
+ */
+.marquee {
+    width: vw;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 20s linear infinite;
+}
+@keyframes marquee {
+    0%   { text-indent: 100vw }
+    100% { text-indent: -200vw }
+}
+
+
