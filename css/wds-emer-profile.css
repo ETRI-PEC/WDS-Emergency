@@ -54,9 +54,7 @@ img {
  * Level 4
  */
 #wds-emer-prof-lv4 {
-    margin-left:0;
     z-index: 9999;
-    vertical-align: middle;
     width: 100vw;
     height: 100vh;
     color : white;
@@ -66,7 +64,6 @@ img {
     position: fixed;
     top: 0vh;
     left: 0vw;
-    overflow: visible;
 }
 
 
